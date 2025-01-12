@@ -41,7 +41,6 @@ fn main() -> std::io::Result<()> {
         return Ok(());
     }
     let total_bytes = size * unit_value;
-    println!("{total_bytes}");
     let mut buffer = BufWriter::new(File::create("dummy.bin")?);
     buffer.write_all(&vec![0; total_bytes])?;
     Ok(())
