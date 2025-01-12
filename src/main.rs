@@ -15,7 +15,7 @@ fn main() -> std::io::Result<()> {
         println!("wrong amount args. {help_msg}");
         return Ok(());
     }
-    let size_arg = &args[1].to_lowercase();
+    let size_arg = args[1].to_lowercase();
     let mut valid_unit = false;
     let mut unit_value = 0;
     let mut size = 0;
